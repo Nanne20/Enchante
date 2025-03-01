@@ -63,15 +63,15 @@ p, h4, h5, h6,a{
 }
 
 #showcase-1 {
-    background-image: url("img/showcase-1.jpg");
+    background-image: url(img/showcase-1.jpg);
 }
 
 #showcase-2 {
-    background-image: url("img/showcase-2.jpg");
+    background-image: url(img/showcase-2.jpg);
 }
 
 #showcase-3 {
-    background-image: url("img/showcase-3.jpg");
+    background-image: url(img/showcase-3.jpg);
 }
 
 #showcase-1::after,
@@ -125,7 +125,7 @@ p, h4, h5, h6,a{
 }
 
 .col-img{
-    background-image: url("img/highlight.png");
+    background-image: url(img/highlight.png);
     background-position: center;
     background-size: cover;
     min-height: 500px;
