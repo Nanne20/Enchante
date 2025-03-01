@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+
+    <title>Enchanté</title>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg py-3 navbar-light bg-light shadow-sm">
+    <div class="container">
+      <a class="navbar-brand logo txt-gold" href="index.html">Enchanté</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active txt-charcoal" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link txt-charcoal" href="services.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link txt-charcoal" href="#gallery">Gallery</a>
+          </li>
+          
+        </ul>
+        <button class="btn btn-primary ms-lg-3"><a href="contacto.html" class="text-decoration-none text-white text-wrap">Book a date</a></button>
+      </div>
+    </div>
+  </nav>
+
+  <div id="header" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#header" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#header" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#header" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div id="showcase-1" class="carousel-item active" data-bs-interval="7000">
+        <div class="container ps-4">
+          <h1 class="display-2 fw-semibold pb-2">Embrace the Red Hair Trend!</h1>
+          <p class="w-50 fs-5 pb-3">Transform your look and radiate confidence with a stunning new shade that complements your unique style.</p>
+          <a href="#" class="btn btn-lg btn-primary">Book a date</a>
+        </div>
+      </div>
+      <div id="showcase-2" class="carousel-item" data-bs-interval="7000">
+        <div class="container ps-5">
+          <h1 class="display-2 fw-semibold pb-2">Experience Luxury</h1>
+          <p class="w-50 fs-5 pb-4">Indulge in our premium beauty treatments for a glamorous you.</p>
+          <a href="contacto.html" class="btn btn-lg btn-primary">Book a date</a>
+        </div>
+      </div>
+      <div id="showcase-3" class="carousel-item" >
+        <div class="container ps-5">
+          <h1 class="display-2 fw-semibold pb-2">Expert Stylists</h1>
+          <p class="w-50 fs-5 pb-4">Our skilled professionals create personalized looks just for you.</p>
+          <a href="#" class="btn btn-lg btn-primary">Book a date</a>
+        </div>
+      </div>
+    </div>
+</div>
+
+<section id="features">
+  <div class="container pt-4">
+    <div class="row">
+      <div class="col-md-8 mx-auto text-center">
+        <h6 class="acento fw-normal fs-5">Services</h6>
+        <h2 class="display-4 fw-semibold txt-charcoal">Our services</h2>
+        <p class="txt-charcoal fs-6 fw-normal">Indulge in Unmatched Beauty and Wellness Treatments.
+        </p>
+      </div>
+    </div>
+    <div class="row pt-3 mb-1">
+      <div class="col-sm-4 mb-2">
+        <div class="card card-effect shadow-sm " style="height: 40vh;">
+          <div class="card-body  p-4">
+            <div class="iconbox p-3 bk-green">
+              <img src="img/feature-1.svg" class="card-img-top " alt="icon-1">
+            </div>
+            <h5 class="card-tittle pt-4 fs-2 fw-bold">Luxury</h5>
+            <p class="card-text">We have only the best tools to archive.</p>
+          </div>
+        </div>
+       </div>
+       <div class="col-sm-4">
+        <div class="card card-effect shadow-sm " style="height: 40vh;">
+          <div class="card-body p-4">
+            <div class="iconbox p-3 bk-green">
+              <img src="img/feature-2.svg" class="card-img-top" alt="icon-1">
+            </div>
+            <h5 class="card-tittle pt-4 fs-2 fw-bold">Haircuts</h5>
+            <p class="card-text">We count with the best specialists when is about hair, makeup and nails!</p>
+          </div>
+        </div>
+       </div>
+       <div class="col-sm-4">
+        <div class="card card-effect shadow-sm" style="height: 40vh;">
+          <div class="card-body p-4">
+            <div class="iconbox p-3 bk-green">
+              <img src="img/feature-3.svg" class="card-img-top" alt="icon-1">
+            </div>
+            <h5 class="card-tittle pt-4 fs-2 fw-bold">Massages</h5>
+            <p class="card-text">When taking care of you we will always be careful and prioritize your benefit.</p>
+          </div>
+        </div>
+       </div>
+    </div>
+
+    <div class="row pt-3 mb-1">
+      <div class="col-sm-4 mb-5">
+        <div class="card card-effect shadow-sm" style="height: 40vh;">
+          <div class="card-body p-4">
+            <div class="iconbox p-3 bk-green">
+              <img src="img/feature-4.svg" class="card-img-top " alt="icon-1">
+            </div>
+            <h5 class="card-tittle pt-4 fs-2 fw-bold">Styling</h5>
+            <p class="card-text">We can make any type of style that you need, for every event.</p>
+          </div>
+        </div>
+       </div>
+       <div class="col-sm-4">
+        <div class="card card-effect shadow-sm" style="height: 40vh;">
+          <div class="card-body p-4">
+            <div class="iconbox py-3 px-2 bk-green">
+              <img src="img/feature-5.svg" class="card-img-top" alt="icon-1">
+            </div>
+            <h5 class="card-tittle pt-4 fs-2 fw-bold">Quality</h5>
+            <p class="card-text">Not only we know how to get your tones, but we also use the best of the best on you.</p>
+          </div>
+        </div>
+       </div>
+       <div class="col-sm-4">
+        <div class="card card-effect shadow-sm" style="height: 40vh;">
+          <div class="card-body p-4">
+            <div class="iconbox pt-2 px-3 bk-green">
+              <img src="img/feature-6.svg" class="card-img-top" alt="icon-1">
+            </div>
+            <h5 class="card-tittle pt-4 fs-2 fw-bold txt-charcoal">Makeup</h5>
+            <p class="card-text txt-charcoal">Makeup is an art, and we know all about it.</p>
+          </div>
+        </div>
+       </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="highlight" class="pb-4 shadow-sm">
+    <div class="row w-100 bg-light">
+      <div class="col-lg-6 col-img"></div>
+      <div class="col-lg-6 py-5">
+        <div class="container">
+          <div class="row">
+              <div class="col-md-10 offset-md-1">
+                <h6 class="acento fw-normal fs-5">Special offer</h6>
+                <h2 class="display-5 fw-semibold pb-2 ">Pamper Mom with Our Mother's Day Special!</h2>
+                <p class="txt-ash">Celebrate Mother's Day with the ultimate pampering experience! Treat your mom to a luxurious day at our salon with a special package that includes a rejuvenating facial, a relaxing massage, and a stylish haircut or color of her choice. Show her how much she means to you with a gift of beauty and relaxation she’ll never forget.</p>
+                <a href="contacto.html" class="btn btn-lg btn-primary mt-3">Book a date</a>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+
+<section id="gallery">
+  <div class="container pt-3">
+    <div class="row">
+      <div class="col-md-8 mx-auto text-center">
+        <h6 class="acento fw-normal fs-5 mb-0"> We take pride for</h6>
+        <h2 class="display-4 fw-semibold mb-3">Our work</h2>
+      </div>
+    </div>
+    <div class="row g-0">
+      <div class="col-lg-4 ">
+        <div class="project ratio ratio-1x1">
+            <img src="img/gallery-1.jpg" class="w-100" alt="">
+          <div class="overlay text-center d-flex flex-column justify-content-center p-5">
+            <h4 class="text-white fs-3">The perfect look</h4>
+            <h6 class="text-white">Autum special - 2019</h6>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-lg-4 ">
+        <div class="project ratio ratio-1x1">
+            <img src="img/gallery-2.png" class="w-100" alt="">
+          <div class="overlay text-center d-flex flex-column justify-content-center p-5">
+            <h4 class="text-white fs-3">Bold and free</h4>
+            <h6 class="text-white">The color and size to make an statement</h6>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 ">
+        <div class="project ratio ratio-1x1">
+            <img src="img/gallery-3.jpg" class="w-100" alt="">
+          <div class="overlay text-center d-flex flex-column justify-content-center p-5">
+            <h4 class="text-white fs-3">Colors in your gaze</h4>
+            <h6 class="text-white">We know how to archive that</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row g-0">
+      <div class="col-lg-4 ">
+        <div class="project ratio ratio-1x1">
+            <img src="img/gallery-4.jpg" class="w-100" alt="">
+          <div class="overlay text-center d-flex flex-column justify-content-center p-5">
+            <h4 class="text-white fs-3">Deep looks</h4>
+            <h6 class="text-white">We assembled that, we can do it again</h6>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-lg-4 ">
+        <div class="project ratio ratio-1x1">
+            <img src="img/gallery-5.jpg" class="w-100" alt="">
+          <div class="overlay text-center d-flex flex-column justify-content-center p-5">
+            <h4 class="text-white fs-3">Great finish</h4>
+            <h6 class="text-white">Soft and shinny</h6>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 ">
+        <div class="project ratio ratio-1x1">
+            <img src="img/gallery-6.jpg" class="w-100" alt="">
+          <div class="overlay text-center d-flex flex-column justify-content-center p-5">
+            <h4 class="text-white fs-3">Blondes have more fun</h4>
+            <h6 class="text-white">And it was perfect for her</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row g-0">
+      <div class="col-lg-4 ">
+        <div class="project ratio ratio-1x1">
+            <img src="img/gallery-7.jpg" class="w-100" alt="">
+          <div class="overlay text-center d-flex flex-column justify-content-center p-5">
+            <h4 class="text-white fs-3">Art</h4>
+            <h6 class="text-white">In your mere fingernail</h6>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-lg-4 ">
+        <div class="project ratio ratio-1x1">
+            <img src="img/gallery-8.jpg" class="w-100" alt="">
+          <div class="overlay text-center d-flex flex-column justify-content-center p-5">
+            <h4 class="text-white fs-3">Color, Shapes</h4>
+            <h6 class="text-white">Express yourself</h6>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 ">
+        <div class="project ratio ratio-1x1">
+            <img src="img/gallery-9.jpg" class="w-100" alt="">
+          <div class="overlay text-center d-flex flex-column justify-content-center p-5">
+            <h4 class="text-white fs-3">Show off your nails</h4>
+            <h6 class="text-white">with the best designs</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div id="reviews" class="container my-5">
+    <h6 class="acento fw-normal fs-5 mb-0 text-center"> Let's hear it</h6>
+    <h2 class="display-4 fw-semibold text-center">Our customers opinion</h2>
+  <div id="reviewCarousel" class="carousel slide mt-0" data-bs-ride="carousel">
+      <div class="carousel-inner">
+          <div class="carousel-item active">
+              <div class="d-flex justify-content-center align-items-center" style="height: 90vh;">
+                  <div class="card shadow-sm review-card text-center p-3">
+                      <img src="img/review-1.jpeg" class="testimonial-image" alt="Person 1">
+                      <div class="card-body">
+                          <h5 class="card-title">Emily R.</h5>
+                          <p class="card-text">"I had an amazing experience at this salon! The staff was incredibly friendly and professional. My haircut and color turned out exactly how I wanted. 
+                            I highly recommend this place to anyone looking for top-notch beauty services."</p>
+                            <h6 class="blockquote-footer mt-3 fw-normal">Community manager</h6>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="carousel-item">
+              <div class="d-flex justify-content-center align-items-center" style="height: 90vh;">
+                  <div class="card shadow-sm review-card text-center p-3">
+                      <img src="img/review-2.jpeg" class="testimonial-image" alt="Person 2">
+                      <div class="card-body">
+                          <h5 class="card-title">Samantha T.</h5>
+                          <p class="card-text">"I tried a perm in this salon, and I couldn't be happier with the results. 
+                            The stylist listened to my ideas and delivered an amazing outcome. I'll be recommending this salon to all my friends!"</p>
+                          <h6 class="blockquote-footer mt-3 fw-normal">Minister</h6>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="carousel-item">
+              <div class="d-flex justify-content-center align-items-center" style="height: 90vh;">
+                  <div class="card shadow-sm review-card text-center p-3">
+                      <img src="img/review-3.jpeg" class="testimonial-image" alt="Person 3">
+                      <div class="card-body">
+                          <h5 class="card-title">Lisa M.</h5>
+                          <p class="card-text">"The salon is great, but I wish they offered more organic and natural product options.
+                             Other than that, the service was exceptional, and the staff was very attentive. I'll be back for sure!"</p>
+                          <h6 class="blockquote-footer mt-3 fw-normal">Lawyer</h6>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="carousel-item">
+              <div class="d-flex justify-content-center align-items-center" style="height: 90vh;">
+                  <div class="card shadow-sm review-card text-center p-3">
+                      <img src="img/review-4.jpeg" class="testimonial-image" alt="Person 4">
+                      <div class="card-body">
+                          <h5 class="card-title">John D.</h5>
+                          <p class="card-text">"I brought my wife here for a surprise Mother's Day pampering session, and she loved it! The atmosphere was relaxing, and the treatments were excellent. 
+                            We'll definitely be coming back for more"</p>
+                          <h6 class="blockquote-footer mt-3 fw-normal">CEO </h6>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#reviewCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#reviewCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+      </button>
+  </div>
+</div>
+
+<section id="footer" class="bk-green text-white py-5 mt-5">
+    <div class="container text-light text-center d-flex flex-column">
+      <a class="text-white text-decoration-none logo " href="index.html">Enchanté</a>
+    <small class="text-white-50">&copy; Copyright by Ibañez Mena Toro</small>
+    </div>
+
+</section>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+  <script>
+    gsap.from(".navbar-brand, .nav-item", {duration: 1, y: -30, opacity: 0, stagger: 0.2, delay: 0.5});
+    gsap.from(".btn-primary", {duration: 1, y: 30, opacity: 0, delay: 1});
+    gsap.from(".carousel", {duration: 1, y: 30, opacity: 0, stagger: 0.2, delay: 0.5});
+    gsap.from("#features", {scrollTrigger: {trigger: "#features", toggleActions: "restart pause restart reset"}, duration: 2, y: 30, opacity: 0, stagger: 0.2});
+    gsap.from("#features", {scrollTrigger: {trigger: "#features", toggleActions: "restart pause restart reset"},duration: 1, x: 200, opacity: 0, delay: 0.5});
+    gsap.from(".project", {opacity: 0, y: 50, stagger: 0.2, duration: 1, ease: "power4.out",scrollTrigger: {trigger: "#gallery",start: "top 80%",}});
+</script>
+
+  </body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+   <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+
+    <title>Parcial-3-Ibañez-Mena-Toro</title>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg py-3 navbar-light bg-light shadow-sm">
+    <div class="container">
+      <a class="navbar-brand logo txt-gold" href="index.html">Enchanté</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active txt-charcoal" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link txt-charcoal" href="services.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link txt-charcoal" href="#gallery">Gallery</a>
+          </li>
+          
+        </ul>
+        <button class="btn btn-primary ms-lg-3"><a href="contacto.html" class="text-decoration-none text-white text-wrap">Book a date</a></button>
+      </div>
+    </div>
+  </nav>
+
+  <div id="form" class="form-area pt-5">
+    <div class="container d-flex justify-content-center flex-column">
+        <div class="title text-center">
+            <h2><span>BOOK A DATE!</span></h2>
+        </div>
+        <div class="row single-form g-0">
+            <div class="col-sm-12 col-lg-10">
+                <div class="right my-3">
+                   <i class="fa fa-caret-left"></i>
+                    <form>
+                        <div class="mb-3 two">
+                            <label for="exampleInputName" class="form-label fs-5">Name</label>
+                            <input type="text" class="form-control" id="exampleInputName" aria-describedby="namelHelp">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail" class="form-label fs-5">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail" aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputDate" class="form-label fs-5">Date</label>
+                            <input type="date" class="form-control" id="exampleInputDate" aria-describedby="datetlHelp">
+                        </div>
+                        <div class="mb-3 d-flex flex-row ">
+                            <div class="mb-3 me-5">
+                                <label for="exampleInputTime" class="form-label fs-5">Hour</label> <br>
+                                <input type="time" class="form-control form-control-custom" id="exampleInputTime" aria-describedby="timeHelp">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputMessage" class="form-label fs-5">Service type</label><br>
+                                <div class="select-wrapper">
+                                    <select class="form-control form-control-custom" id="exampleInputMessage">
+                                        <option value="service1">Haircut and Style</option>
+                                        <option value="service2">Hair Color and Highlights</option>
+                                        <option value="service3">Manicure and Pedicure</option>
+                                        <option value="service4">Makeup Application</option>
+                                        <option value="service5">Rejuvenating Facial</option>
+                                        <option value="service6">Hair Washing and Blowout</option>
+                                    </select>
+                                </div><br>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputMessage" class="form-label fs-5">Any detail?</label>
+                            <textarea type="text" class="form-control" id="exampleInputMessage" style="height: 20vh;"></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPhone" class="form-label fs-5">Phone number</label>
+                            <input type="tel" class="form-control" id="exampleInputPhone" aria-describedby="phoneHelp">
+                        </div>
+                        <div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                    </form>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<section id="footer" class="bk-green text-white py-5 mt-5">
+    <div class="container text-light text-center d-flex flex-column">
+      <a class="text-white text-decoration-none logo " href="index.html">Enchanté</a>
+    <small class="text-white-50">&copy; Copyright by Ibañez Mena Toro</small>
+    </div>
+
+</section>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+  <script>
+    gsap.from(".navbar-brand, .nav-item", {duration: 1, y: -30, opacity: 0, stagger: 0.2, delay: 0.5});
+    gsap.from(".btn-primary", {duration: 1, y: 30, opacity: 0, delay: 1});
+    gsap.from(gsap.from("#form", {scrollTrigger: {trigger: "#form", toggleActions: "restart pause restart reset"},duration: 1, y: 200, opacity: 0, delay: 0.5}));
+</script>
+
+</body>
+</html>
